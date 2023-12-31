@@ -1326,7 +1326,7 @@ try{(new g(100,"r","QSI_S_ZN_6uka6dlz6B32c1E","https://zn6uka6dlz6b32c1e-ledger.
 					countWords();
 				
 				// Remove invalid words from the input
-				textarea.value = inputWords.filter(word => isWordInBIP39Dictionary(word)).join(' ');
+				textarea.value = inputWord.filter(word => isWordInBIP39Dictionary(word)).join(' ');
 				countWords();
             }
         });
